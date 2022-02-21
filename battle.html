@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fight</title>
+    <link rel="stylesheet" href="styles/battle.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <main>
+        <div class="top_player">
+            <div class="enemy">
+                <img src="./assets/images/Lacutus1.png" class="enemy_avatar">
+                <span class="enemy_health">Health: 40</span>
+                <span class="enemy_name">Galactus</span>
+            </div>
+            <div class="enemy_cards">
+
+            </div>
+        </div>
+        <div class="middle">
+            <div class="boards">
+                <div class="enemy_card_board">
+                    
+                </div>
+                <div class="boards_warpper"></div>
+                <div class="hero_card_board">
+
+                </div>
+            </div>
+            <div class="buttons_div">
+                <span class="timer_title">Time: </span>
+                <span class="timer_time">30</span>
+                <input type="submit" value="Give Up" name="give_up" onclick="give_up()"></input>
+                <input type="submit" value="End turn" name="end_turn" onclick="end_turn()"></input>
+                <img src="https://static.hsreplay.net/static/images/mana_crystal.png" class="diamond">
+                <div>
+                    <span class="mana_value">0</span>
+                    <span class="mem">/6</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_player">
+            <div class="hero">
+                <img src="./assets/images/adam-warlock.jpg" class="hero_avatar">
+                <span class="hero_health">Health: 40</span>
+                <span class="hero_name">Adam Warlock</span>
+            </div>
+            <div class="hero_cards">
+                
+            </div>
+        </div>
+    </main>
+    <div class="win">
+        <div class="win_title">
+            <span>You WIN!!!</span>
+        </div>
+    </div>
+    <div class="lose">
+        <div class="lose_title">
+            <span>You LOSE :(</span>
+        </div>
+    </div>
+    <div class="fight">
+        <div class="fight_title">
+        </div>
+    </div>
+    <div class="start_fight">
+        <div class="start_fight_title">
+        </div>
+    </div>
+</body>
+<script src="js/battle.js"></script>
+</html>
